@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvironmentTracker", "EnvironmentTracker\EnvironmentTracker.csproj", "{45EB18DB-19A0-4E4D-9F14-4108EB64D578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvironmentInfoProvider", "EnvironmentInfoProvider\EnvironmentInfoProvider.csproj", "{2B587D6B-32F0-4E10-B6AD-9F252F5CE47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage\Storage.csproj", "{E46F8705-FAB2-439B-BE89-29466A47AC4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageTests", "StorageTests\StorageTests.csproj", "{2822C6BC-1D3D-4DAC-8FE6-DB9CBA316D19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{731AC7B9-0270-4B8E-B91F-3BB5F237C43D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		elte.ruleset = elte.ruleset
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45EB18DB-19A0-4E4D-9F14-4108EB64D578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EB18DB-19A0-4E4D-9F14-4108EB64D578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EB18DB-19A0-4E4D-9F14-4108EB64D578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EB18DB-19A0-4E4D-9F14-4108EB64D578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B587D6B-32F0-4E10-B6AD-9F252F5CE47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B587D6B-32F0-4E10-B6AD-9F252F5CE47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B587D6B-32F0-4E10-B6AD-9F252F5CE47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B587D6B-32F0-4E10-B6AD-9F252F5CE47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46F8705-FAB2-439B-BE89-29466A47AC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46F8705-FAB2-439B-BE89-29466A47AC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46F8705-FAB2-439B-BE89-29466A47AC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46F8705-FAB2-439B-BE89-29466A47AC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2822C6BC-1D3D-4DAC-8FE6-DB9CBA316D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2822C6BC-1D3D-4DAC-8FE6-DB9CBA316D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2822C6BC-1D3D-4DAC-8FE6-DB9CBA316D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2822C6BC-1D3D-4DAC-8FE6-DB9CBA316D19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

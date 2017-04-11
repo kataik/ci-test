@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "documentationRules": {
+      "companyName": "ELTE",
+      "copyrightText": "Copyright (c) {licenseYear}, {companyName}. All rights reserved.\r\nLicensed under the {licenseName} license.",
+      "variables": {
+        "licenseName": "MIT",
+        "licenseFile": "LICENSE",
+        "licenseYear": "2017"
+      },
+      "headerDecoration": "-----------------------------------------------------------------------"
+    }
+  }
+}
