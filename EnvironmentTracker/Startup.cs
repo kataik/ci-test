@@ -6,17 +6,17 @@
 namespace EnvironmentTracker
 {
     using System.IO;
-    using EnvironmentInfoProvider;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
-    using Storage;
 
     /// <summary>
     /// Spins up and configures the CLI application services.
     /// </summary>
     public class Startup
     {
+        private const string ServicesSectionName = "services";
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Startup"/> class.
         /// </summary>
@@ -49,18 +49,8 @@ namespace EnvironmentTracker
                     .AddConsole()
                     .AddDebug())
                 .AddLogging()
-                .AddSingleton<IEnvironmentInfoProvider, DefaultEnvironmentInfoProvider>()
-                .AddSingleton(typeof(IStorage<>), typeof(FileStorage<>))
-                .AddSingleton(this.GetConfiguration())
+                .AutoResolveServices(this.Configuration.GetSection(ServicesSectionName))
                 .AddSingleton<EnvironmentTracker>();
-        }
-
-        private FileStorageConfiguration GetConfiguration()
-        {
-            var result = new FileStorageConfiguration();
-            this.Configuration.Bind(result);
-
-            return result;
         }
     }
 }
