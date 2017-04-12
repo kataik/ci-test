@@ -32,7 +32,10 @@
 
   <ItemGroup>
     <AdditionalFiles Include="../stylecop.json" />
-    <AdditionalFiles Include="../Settings.StyleCop" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.json" CopyToPublishDirectory="Always" />
   </ItemGroup>
 
 </Project>

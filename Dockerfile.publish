@@ -1,0 +1,10 @@
+FROM microsoft/dotnet:1.1.1-runtime
+MAINTAINER Kornel Balint Katai <kataik@gmail.com>
+
+WORKDIR /app
+
+COPY ./src/publish .
+
+VOLUME /data
+
+ENTRYPOINT ["dotnet", "EnvironmentTracker.dll"]
